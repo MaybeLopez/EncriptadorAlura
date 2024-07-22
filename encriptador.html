@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <!-- modify this form HTML and place wherever you want your form -->
+
+        <title>Encriptador</title>
+    </head>
+
+    <body>
+        <main class="main">
+            <div class="logo">
+                <img src="img/Logo.png" alt="logo">
+            </div>
+            <div class="container">
+                <div class="input_text">
+                    <textarea class="input_text_encrypt" id="input_text_encrypt" placeholder="Ingrese texto aquí"></textarea>
+                    <div class="bottom">
+                        <small><span><i class="fas fa-exclamation-circle"></i></span> letras minusculas y sin acentos</small>
+                        <div class="buttons">
+                            <button class="button button_encrypt" id="button_encrypt">Encriptar</button>
+                            <button class="button button_decrypt"id="button_decrypt">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="output_text" id="output_text">
+                <div class="result no_texto">
+                    <div class="no_output">
+                        <img id="Muneco" class="" src="img/muneco.png" alt="muneco">
+                        <h2>Ningun mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                    <div class="result_output">
+                        <textarea class="output_text_decrypt" id="output_text_decrypt" ></textarea>
+                        <button class="button button_decrypt button_copiar"id="button_copiar">Copiar</button>
+                    </div>
+                </div>
+            </div>
+           
+        </main>
+        <footer class="footer-distributed">
+			<div class="footer-left">
+				<h3>Encriptador-<span>Alura</span></h3>
+				<p class="footer-company-name">Mabelline F. © 2024 - Challenge one</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.linkedin.com/feed/" ><i class="fab fa-linkedin"></i></a>
+					<a href="https://github.com/MaybeLopez"> <i class="fab fa-github "></i></a>
+
+				</div>
+			</div>
+
+			<div class="footer-right">
+				<p>Contactanos:</p>
+
+				<form id="my_form" action="https://formspree.io/f/mldrgjkv" method="post">
+					<input type="email" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Mensaje"></textarea>
+					<button class="button_enviar" type="submit">Enviar</button>
+
+				</form>
+
+			</div>
+
+		</footer>
+        
+        <script src="scripts.js"> </script>
+        
+        <div id="custom-alert"></div>
+    </body>
+</html>
